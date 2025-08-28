@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,32 +8,89 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Jersey+20&family=Julee&display=swap"rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/preparacion.css">
     <title>Preparacion</title>
 </head>
+
 <body>
-    <main class="container">
+    <!-- header con la receta y los iconos de atras y favoritos -->
+    <div class="receta-card">
         <div class="header">
-            <img src="assets/img/logo_2.webp" alt="Logo el Fogón Feliz" class="img-logo">
-            <h1 class="titulo">El Fogón Feliz</h1>
-            <p class="subtitulo">Cocina para Vagos</p>
+            <span class="header-icon back-arrow">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <path d="M15.41 7.41L14 6L8 12L14 18L15.41 16.59L10.83 12L15.41 7.41Z" />
+                </svg>
+            </span>
+            <span class="header-icon heart">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <path
+                        d="M12 21.35L10.55 20.03C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.09C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5C22 12.28 18.6 15.36 13.45 20.03L12 21.35Z" />
+                </svg>
+            </span>
         </div>
-        <section class="preparacion-container" id="preparacion-container">
-            <!--aqui va la preparacion de la receta--> 
-            <h1 class="title-receta"></h1>
-            <p class="ingredientes-receta"></p>
-            <p class="tiempo-receta"></p>
-            <h3 class="preparacion">Preparación:</h3>
-            <p class="proceso-receta"></p>
-        </section>
-        <section class="footer">
-           <a href="recetas.html" class="btn-enlace">
-                <button type="submit" class="btn-atras" id="atras">Volver Atras</button>
-           </a>
-        </section>
-    </main>
+
+        <div class="imagen-container">
+            <div class="bg-shape"></div>
+            <img class="receta-imagen" src="./assets/img/comida_2.jpg" alt="Shrimp and greens soba">
+        </div>
+
+        <h1 class="receta-titulo">Lorem</h1>
+
+        <!-- informacion de la receta -->
+        <div class="info-bar">
+            <div class="info-item">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <path
+                        d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                </svg>
+                <span>4.8</span>
+            </div>
+            <div class="info-item">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <path
+                        d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 12H18V14H11V7H13V12Z" />
+                </svg>
+                <span>15 min</span>
+            </div>
+            <div class="info-item">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <path
+                        d="M12 2C8.13 2 5 5.13 5 9C5 12.04 6.64 13.97 9.1 16.32L12 19.34L14.9 16.32C17.36 13.97 19 12.04 19 9C19 5.13 15.87 2 12 2Z" />
+                </svg>
+                <span>125 kcal</span>
+            </div>
+        </div>
+
+        <!-- ingredientes -->
+
+        <h2 class="section-titulo">Ingredientes:</h2>
+        <div class="ingrediente-list">
+            <div class="ingrediente-item">
+                <img class="ingrediente-imagen" src="./assets/img/aguacate.webp" alt="Aguacate">
+                <span class="ingrediente-nombre">Aguacate</span>
+            </div>
+            <div class="ingrediente-item">
+                <img class="ingrediente-imagen" src="./assets/img/pimientos.webp" alt="Pimientos">
+                <span class="ingrediente-nombre">Pimientos</span>
+            </div>
+            <div class="ingrediente-item">
+                <img class="ingrediente-imagen" src="./assets/img/calabacin.webp" alt="Calabacin">
+                <span class="ingrediente-nombre">Calabacin</span>
+            </div>
+            <div class="ingrediente-item">
+                <img class="ingrediente-imagen" src="./assets/img/pasta.webp" alt="Pasta">
+                <span class="ingrediente-nombre">Pasta</span>
+            </div>
+        </div>
+
+        <h2 class="section-titulo">Detalles:</h2>
+        <div class="detalles-box">
+            <p class="detalles-texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum inventore vitae enim voluptates, adipisci praesentium laboriosam similique itaque excepturi blanditiis dicta fugit aut hic, repudiandae beatae eveniet mollitia, quod vero!</p>
+        </div>
+
+    </div>
 </body>
 </html>
-        
 
-    
+
+
