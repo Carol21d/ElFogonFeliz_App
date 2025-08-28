@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+20&family=Julee&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Jersey+20&family=Julee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ingredientes</title>
+</head>
+<body>
+    <main class="container-ingredientes">
+        <div class="header">
+            <img src="assets/img/logo_2.webp" alt="Logo el Fogón Feliz" class="img-logo">
+            <h1 class="titulo">El Fogón Feliz</h1>
+            <p class="subtitulo">Cocina para Vagos</p>
+        </div>
+
+        <!-- Los ingredientes -->
+        <section class="content-ingredientes">
+            <h2 class="titulo-ingredientes">Elige los ingredientes que tienes en tu nevera:</h2>
+            <div class="grid-ingredientes" id="grid-ingredientes-container"></div>
+        </section>
+
+        <!-- Footer -->
+        <section class="footer">
+
+            <button type="submit" class="btn-recetas disabled" id="recetas">Ver Recetas</button>
+
+        </section>
+        <p id="aviso-ingredientes" class="aviso oculto">Ya has seleccionado el máximo de 5 ingredientes</p>
+
+    </main>
+    <script src="js/ingredientes.js"></script>
+    <script src="js/recetas.js"></script>
+</body>
+</html>
