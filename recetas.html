@@ -17,7 +17,7 @@
 <body>
     <!-- header con las recetas -->
     <div class="receta-card">
-        <div class="header">
+        <header class="header">
             <span class="header-icon back-arrow">
                 <a href="recetas.html">
                     <svg class="icon" viewBox="0 0 24 24">
@@ -25,44 +25,72 @@
                     </svg>
                 </a>
             </span>
-
-            <div>
-                <p>Recetas</p>
-            </div>
-
-            <img class="receta-imagen" src="./assets/img/logo_2.webp" alt="logo-fogon-feliz">
-
-        </div>
+            <p class="header-titulo">Recetas</p>
+            <img class="logo-imagen" src="./assets/img/logo_2.webp" alt="logo-fogon-feliz">
+        </header>
 
 
-       
+
 
         <!--  Contendra las recetas arrogadas por la api -->
-        <div class="cards-container">
+        <main class="cards-container">
             <div class="card-comida">
-                <img src="./assets/img/comida_1.jpg" alt="comida_1" class="comida-imagen">
-                <span class="comida-nombre">comida 1</span>
+                <div class="card-imagen">
+                    <img src="assets/img/comida_1.jpg" alt="comida 1" class="comida-imagen">
+                </div>
+                <div class="card-detalles">
+                    <h3 class="comida-nombre">Receta de prueba 1</h3>
+
+                </div>
+                <a href="preparacion.html" class="card-link">
+                    <button type="button" class="btn-receta">VER MÁS</button>
+                </a>
             </div>
-             <div class="card-comida">
-                <img src="./assets/img/comida_2.jpg" alt="comida_2" class="comida-imagen">
-                <span class="comida-nombre">comida 2</span>
+
+            <!-- Puedes copiar y pegar la tarjeta de ejemplo para crear más -->
+            <div class="card-comida">
+                <div class="card-imagen">
+                    <img src="assets/img/comida_2.jpg" alt="comida 2" class="comida-imagen">
+                </div>
+                <div class="card-detalles">
+                    <h3 class="comida-nombre">Receta de prueba 2</h3>
+
+                </div>
+                <a href="preparacion.html" class="card-link">
+                    <button type="button" class="btn-receta">VER MÁS</button>
+                </a>
             </div>
-             <div class="card-comida">
-                <img src="./assets/img/comida_3.jpg" alt="comida_3" class="comida-imagen">
-                <span class="comida-nombre">comida 3</span>
+            <div class="card-comida">
+                <div class="card-imagen">
+                    <img src="assets/img/comida_3.jpg" alt="comida " class="comida-imagen">
+                </div>
+                <div class="card-detalles">
+                    <h3 class="comida-nombre">Receta de prueba 3</h3>
+
+                </div>
+                <a href="preparacion.html" class="card-link">
+                    <button type="button" class="btn-receta">VER MÁS</button>
+                </a>
             </div>
-        </div>
 
 
 
-
-
-
-
-
-
-
+        </main>
     </div>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
