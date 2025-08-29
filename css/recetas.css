@@ -1,0 +1,43 @@
+body {
+  
+    background-color: #f7f9f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 10px;
+}
+
+.receta-card {
+    background-color: #8bb18d;
+    border-radius: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-icon {
+    font-size: 24px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+    
+}
+
+
+

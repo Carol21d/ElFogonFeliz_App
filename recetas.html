@@ -1,31 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Jersey+20&family=Julee&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Jersey+20&family=Julee&display=swap"rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Jersey+20&family=Julee&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/recetas.css">
     <title>Recetas</title>
 </head>
-<body>
-    <main class="container">
-         <div class="header">
-            <img src="assets/img/logo_2.webp" alt="Logo el Fogón Feliz" class="img-logo">
-            <h1 class="titulo">El Fogón Feliz</h1>
-            <p class="subtitulo">Cocina para Vagos</p>
-        </div>
-        <section class="recetas-container" id="recetas-container"></section>
-        <section class="footer">
-            <a href="ingredientes.html" class="btn-enlace">
-                <button type="submit" class="btn-atras" id="atras">Volver Atras</button>
-            </a>
-        </section>
-    </main>
-    <script src="js/recetas.js"></script>
-</body>
-</html>
 
-    
+<body>
+    <!-- header con las recetas -->
+    <div class="receta-card">
+        <div class="header">
+            <span class="header-icon back-arrow">
+                <a href="recetas.html">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M15.41 7.41L14 6L8 12L14 18L15.41 16.59L10.83 12L15.41 7.41Z" />
+                    </svg>
+                </a>
+            </span>
+
+            <div>
+                <p>Recetas</p>
+            </div>
+
+            <img class="receta-imagen" src="./assets/img/logo_2.webp" alt="logo-fogon-feliz">
+
+        </div>
+
+
+       
+
+        <!--  Contendra las recetas arrogadas por la api -->
+        <div class="cards-container">
+            <div class="card-comida">
+                <img src="./assets/img/comida_1.jpg" alt="comida_1" class="comida-imagen">
+                <span class="comida-nombre">comida 1</span>
+            </div>
+             <div class="card-comida">
+                <img src="./assets/img/comida_2.jpg" alt="comida_2" class="comida-imagen">
+                <span class="comida-nombre">comida 2</span>
+            </div>
+             <div class="card-comida">
+                <img src="./assets/img/comida_3.jpg" alt="comida_3" class="comida-imagen">
+                <span class="comida-nombre">comida 3</span>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
