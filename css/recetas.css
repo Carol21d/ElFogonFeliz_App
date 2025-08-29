@@ -47,7 +47,9 @@ body {
     height: 40px;
 }
 
-
+ /* width: 24px;
+    height: 24px;
+    fill: #555; */
 
 
 .icon {
@@ -119,16 +121,48 @@ body {
 }
 
 
+
+ 
+.card-detalles{
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+
+}
+.comida-nombre{
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  color: #333;
+}
+
+.card-link{
+    
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+ 
+   
+
 .btn-receta {
     color: white;
     background-color: #C14600;
-    border-radius: 12px;
-    padding: 1rem 1rem;
+    border: none;
+    border-radius: 15px;
+    padding: 12px;
     font-family: "Julee", "cursive";
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
 
+
+.btn-receta:hover{
+    background-color: #e3e6e0;
+    color: #C14600;
 }
