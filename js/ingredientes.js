@@ -39,4 +39,81 @@ document.addEventListener('DOMContentLoaded', () =>{
         { imagenSrc: 'assets/img/pera.webp', name: 'Pera' },
         { imagenSrc: 'assets/img/limon.webp', name: 'Limón' },
     ];
+
+    // declaramos el contenedor que tendra los ingredientes
+
+    const containerIngredientes = document.getElementById('grid-ingredientes-container');
+    const btnVerRecetas = document.getElementById('recetas');
+    const aviso = document.getElementById('aviso-ingredientes');
+    const intrucciones = document.getElementById('intrucciones');
+
+
+     // Array para almacenar los nombres de los ingredientes seleccionados
+    let ingredientesSeleccionados = [];
+
+    // desactivamos el btn  ver recetas inicialmente
+    btnVerRecetas.disabled = true;
+
+       // Itera sobre la lista de ingredientes para crear los elementos de imagen en el DOM
+    ingredientes.forEach(ingrediente => {
+        const img = document.createElement('img');
+        img.src = ingrediente.imagenSrc;
+        img.alt = ingrediente.name;
+        img.classList.add('ingrediente-img');
+
+        // Agrega la imagen al contenedor principal
+        containerIngredientes.appendChild(img);
+
+       
+        img.addEventListener('click', () => {
+            seleccionIngredientes(ingrediente.name, img);
+        });
+
+    });
+
+     function seleccionIngredientes(nombreIngrediente, imagenIngrediente) {
+        const index = ingredientesSeleccionados.indexOf(nombreIngrediente);
+
+        // Si el ingrediente no está en el array, lo añade
+        if (index === -1) {
+            // solo permite elegir 5 ingredientes
+            if (ingredientesSeleccionados.length < 5) {
+                ingredientesSeleccionados.push(nombreIngrediente);
+                imagenIngrediente.classList.add('seleccionado');
+                aviso.classList.add('oculto');
+            } else {
+                // Muestra un aviso si el límite se ha alcanzado
+                aviso.classList.remove('oculto');
+                setTimeout(() => {
+                    aviso.classList.add('oculto');
+                }, 3000);
+            }
+        } else {
+            // Si el ingrediente ya está en el array, lo elimina
+            ingredientesSeleccionados.splice(index, 1);
+            imagenIngrediente.classList.remove('seleccionado');
+            aviso.classList.add('oculto');
+        }
+
+        // Habilita o deshabilita el botón "Ver Recetas" 
+        if (ingredientesSeleccionados.length >= 1) {
+            btnVerRecetas.classList.remove('disabled');
+        } else {
+            btnVerRecetas.classList.add('disabled');
+        }
+
+        console.log(ingredientesSeleccionados);
+    }
+    
+    //  el botón "Ver Recetas"
+    btnVerRecetas.addEventListener('click', () => {
+        // const ingredientesURL = ingredientesSeleccionados.join(',');
+        // window.location.href = `recetas.html?ingredientes=${ingredientesURL}`;
+
+        const ingredientesURL = ingredientesSeleccionados.join(',');
+        if(ingredientesSeleccionados.length === 5){
+             window.location.href = `recetas.html?ingredientes=${ingredientesURL}`;
+        }
+    });
 });
+
