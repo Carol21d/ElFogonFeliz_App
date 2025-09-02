@@ -43,14 +43,21 @@ body {
     margin-bottom: 8rem;
 }
 .grid-ingredientes {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 10px;
-    margin: 10px;
+    margin: 10px; */
     /* margin-bottom: 10px; */
     /* margin: 1rem 0.4rem 1rem 0.4rem; */
 
+
+      display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 15px;
+            max-width: 800px;
+            width: 100%;
+        
 }
 
 .grid-ingredientes img {
@@ -141,3 +148,9 @@ body {
 
 }
 
+ #instrucciones {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            text-align: center;
+}
