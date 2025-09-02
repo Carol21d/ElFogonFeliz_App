@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () =>{
         img.src = ingrediente.imagenSrc;
         img.alt = ingrediente.name;
         img.classList.add('ingrediente-img');
+        img.dataset.nombre = ingrediente.name;
 
         // Agrega la imagen al contenedor principal
         containerIngredientes.appendChild(img);
