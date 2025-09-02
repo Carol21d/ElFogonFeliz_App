@@ -30,11 +30,11 @@ body {
 }
 
 .img-logo {
-    width: 100%;
-    max-width: 400px;
+    width: 600px;
+    /* max-width: 1200px; */
     height: auto;
     display: block;
-    margin-left: 4rem;
+    margin-left: 0rem;
 }
 
 .titulo {
