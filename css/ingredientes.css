@@ -5,10 +5,10 @@ body {
 
 .img-logo {
     width: 100%;
-    max-width: 600px;
+    max-width: 300px;
     height: auto;
     display: block;
-    margin-left: 2rem;
+    margin-left: 5rem;
 }
 
 .titulo {
