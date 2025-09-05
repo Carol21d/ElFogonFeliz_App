@@ -166,6 +166,10 @@ body {
     margin-top: 5px;
 }
 
+.ingrediente-cantidad{
+    font-size: 0.9rem;
+    color: #666;
+}
 .preparacion-box {
     background-color: #f0f3ed;
     border-radius: 15px;
