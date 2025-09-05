@@ -85,6 +85,8 @@ document.addEventListener('DOMContentLoaded', () =>{
                         aviso.classList.add('oculto');
                     }
 
+                   
+
                     if (ingredientesSeleccionados.length === 5) {   // Habilita o deshabilita el botón "Ver Recetas" 
                         btnVerRecetas.disabled = false;
                         btnVerRecetas.classList.remove('disabled');
